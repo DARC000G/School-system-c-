@@ -1,1 +1,0 @@
-# C-prgram-School-system-
