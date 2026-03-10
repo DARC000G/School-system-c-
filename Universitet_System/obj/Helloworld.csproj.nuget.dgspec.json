@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/darcooog/Documents/Oblig oppgave #c/Universitet_System/Helloworld.csproj": {}
+    "/Users/darcooog/Documents/School-system-c-/Universitet_System/Helloworld.csproj": {}
   },
   "projects": {
-    "/Users/darcooog/Documents/Oblig oppgave #c/Universitet_System/Helloworld.csproj": {
+    "/Users/darcooog/Documents/School-system-c-/Universitet_System/Helloworld.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/darcooog/Documents/Oblig oppgave #c/Universitet_System/Helloworld.csproj",
+        "projectUniqueName": "/Users/darcooog/Documents/School-system-c-/Universitet_System/Helloworld.csproj",
         "projectName": "Helloworld",
-        "projectPath": "/Users/darcooog/Documents/Oblig oppgave #c/Universitet_System/Helloworld.csproj",
+        "projectPath": "/Users/darcooog/Documents/School-system-c-/Universitet_System/Helloworld.csproj",
         "packagesPath": "/Users/darcooog/.nuget/packages/",
-        "outputPath": "/Users/darcooog/Documents/Oblig oppgave #c/Universitet_System/obj/",
+        "outputPath": "/Users/darcooog/Documents/School-system-c-/Universitet_System/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/darcooog/.nuget/NuGet/NuGet.Config"
