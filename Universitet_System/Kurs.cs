@@ -40,7 +40,7 @@ namespace Universitet_System
         {
             Console.WriteLine($"Dette er Antall studenter påmeldt {AntallStudenter}, det er max antall plasser {MaxAntallStudenter}");
             Console.Write("Hvor mange skal meldes på: ");
-            int antall = int.Parse(Console.ReadLine());
+            int antall = int.Parse(Console.ReadLine() ?? string.Empty);
 
             if (AntallStudenter + antall <= MaxAntallStudenter)
             {

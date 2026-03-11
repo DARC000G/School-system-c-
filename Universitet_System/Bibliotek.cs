@@ -23,7 +23,7 @@ namespace Universitet_System
             }
         }
 
-        public Bok FinnBok(string tittel)
+        public Bok? FinnBok(string tittel)
         {
             return Bøker.Find(b => b.Tittel.Equals(tittel, StringComparison.OrdinalIgnoreCase));
         }

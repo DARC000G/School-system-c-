@@ -30,7 +30,7 @@ namespace Universitet_System
                 Console.WriteLine("0. Avslutt");
 
                 Console.Write("\nVelg et alternativ: ");
-                string valg = Console.ReadLine();
+                string valg = Console.ReadLine() ?? string.Empty;
 
                 switch (valg)
                 {
@@ -55,19 +55,19 @@ namespace Universitet_System
         static void OpprettKurs()
         {
             Console.Write("\nKursnavn: ");
-            string kursnavn = Console.ReadLine();
+            string kursnavn = Console.ReadLine() ?? string.Empty;
 
             Console.Write("Kurskode: ");
-            string kurskode = Console.ReadLine();
+            string kurskode = Console.ReadLine() ?? string.Empty;
 
             Console.Write("Studiepoeng: ");
-            int studiepoeng = int.Parse(Console.ReadLine());
+            int studiepoeng = int.Parse(Console.ReadLine() ?? string.Empty);
 
             Console.Write("Maks antall studenter: ");
-            int maksAntallStudenter = int.Parse(Console.ReadLine());
+            int maksAntallStudenter = int.Parse(Console.ReadLine() ?? string.Empty);
 
             Console.Write("Antall studenter: ");
-            int antallStudenter = int.Parse(Console.ReadLine());
+            int antallStudenter = int.Parse(Console.ReadLine() ?? string.Empty);
 
             Kurs nyttKurs = new Kurs(kurskode, kursnavn, studiepoeng, antallStudenter, maksAntallStudenter);
             kursListe.Add(nyttKurs);
@@ -78,13 +78,12 @@ namespace Universitet_System
         static void MeldPå()
         {
             Console.Write("\nKurskode: ");
-            string kode = Console.ReadLine();
+            string kode = Console.ReadLine() ?? string.Empty;
 
             Console.Write("Studentnavn: ");
-            string navn = Console.ReadLine();
+            string navn = Console.ReadLine() ?? string.Empty;
 
-            Kurs kurs = kursListe.Find(k => k.Kurskode == kode);
-
+            Kurs? kurs = kursListe.Find(k => k.Kurskode == kode);
             if (kurs == null)
             {
                 Console.WriteLine("Fant ikke kurs.");
@@ -104,9 +103,9 @@ namespace Universitet_System
         static void SøkPåKurs()
         {
             Console.Write("\nSøk etter kurskode: ");
-            string kode = Console.ReadLine();
+            string kode = Console.ReadLine() ?? string.Empty;
 
-            Kurs kurs = kursListe.Find(k => k.Kurskode == kode);
+            Kurs? kurs = kursListe.Find(k => k.Kurskode == kode);
 
             if (kurs == null)
                 Console.WriteLine("Fant ikke kurs.");
@@ -117,9 +116,9 @@ namespace Universitet_System
         static void SøkPåBok()
         {
             Console.Write("\nSøk etter boktittel: ");
-            string tittel = Console.ReadLine();
+            string tittel = Console.ReadLine() ?? string.Empty;
 
-            Bok bok = bibliotek.FinnBok(tittel);
+            Bok? bok = bibliotek.FinnBok(tittel);
 
             if (bok == null)
                 Console.WriteLine("Fant ikke bok.");
@@ -130,20 +129,20 @@ namespace Universitet_System
         static void LånBok()
         {
             Console.Write("\nBoktittel: ");
-            string tittel = Console.ReadLine();
+            string tittel = Console.ReadLine() ?? string.Empty;
 
-            Bok bok = bibliotek.FinnBok(tittel);
+            Bok? bok = bibliotek.FinnBok(tittel);
 
-            bok.LånUt();
+            bok?.LånUt();
 
         }
 
         static void ReturnerBok()
         {
             Console.Write("\nBoktittel: ");
-            string tittel = Console.ReadLine();
+            string tittel = Console.ReadLine() ?? string.Empty;
 
-            Bok bok = bibliotek.FinnBok(tittel);
+            Bok? bok = bibliotek.FinnBok(tittel);
 
             if (bok == null)
             {
@@ -158,19 +157,19 @@ namespace Universitet_System
         static void RegistrerBok()
         {
             Console.Write("\nTittel: ");
-            string tittel = Console.ReadLine();
+            string tittel = Console.ReadLine() ?? string.Empty;
 
             Console.Write("Forfatter: ");
-            string forfatter = Console.ReadLine();
+            string forfatter = Console.ReadLine() ?? string.Empty;
 
             Console.Write("ISBN: ");
-            string isbn = Console.ReadLine();
+            string isbn = Console.ReadLine() ?? string.Empty;
 
             Console.Write("År: ");
-            int år = int.Parse(Console.ReadLine());
+            int år = int.Parse(Console.ReadLine() ?? string.Empty);
 
             Console.Write("Eksemplarer: ");
-            int eksemplarer = int.Parse(Console.ReadLine());
+            int eksemplarer = int.Parse(Console.ReadLine() ?? string.Empty);
 
             bibliotek.LeggTilBok(new Bok(isbn, tittel, forfatter, år, eksemplarer));
 
