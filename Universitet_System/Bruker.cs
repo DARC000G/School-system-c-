@@ -21,6 +21,5 @@ namespace Universitet_System
         }
 
     }
-
-
+    
 }

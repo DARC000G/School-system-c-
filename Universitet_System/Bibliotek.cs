@@ -1,31 +1,25 @@
-
-
 namespace Universitet_System
 {
     public class Bibliotek
     {
-        // liste over alle bøker o bibliotek
-        public List<Bok> Bøker { get; } = new List<Bok>();
+        public List<Bok> BokListe { get; set; } = new List<Bok>();
+        public List<Lån> LånListe { get; set; } = new List<Lån>();
 
-        // legge til en bok i biblioteket
         public void LeggTilBok(Bok bok)
         {
-            Bøker.Add(bok);
-        }
-
-        // vise alle bøker i biblioteket
-        public void VisAlleBøker()
-        {
-            Console.WriteLine("Bøker i biblioteket:");
-            foreach (var bok in Bøker)
-            {
-                Console.WriteLine(bok);
-            }
+            BokListe.Add(bok);
         }
 
         public Bok? FinnBok(string tittel)
         {
-            return Bøker.Find(b => b.Tittel.Equals(tittel, StringComparison.OrdinalIgnoreCase));
+            return BokListe.Find(b =>
+                b.Tittel.Contains(tittel, StringComparison.OrdinalIgnoreCase));
+        }
+
+        public void VisAlleBøker()
+        {
+            foreach (var bok in BokListe)
+                Console.WriteLine(bok);
         }
     }
 }

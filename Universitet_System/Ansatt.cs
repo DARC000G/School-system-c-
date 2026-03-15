@@ -7,15 +7,15 @@ namespace Universitet_System
         // Ansattes unike ID
         public string AnsattID { get; set; }
         public string Stilling { get; set; }
-        public string Fagområde { get; set; }
+        public string Avdeling { get; set; }
 
         // Konstruktør: når vi lager en ansatt
-        public Ansatt(string ansattID, string Brukernavn, string epost, string stilling, string fagområde)
+        public Ansatt(string ansattID, string Brukernavn, string epost, string stilling, string avdeling)
         : base(Brukernavn, epost)
         {
             AnsattID = ansattID;
             Stilling = stilling;
-            Fagområde = fagområde;
+            Avdeling = avdeling;
         }
 
         // Fin utskrift når vi skriver ut den ansatte

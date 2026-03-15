@@ -1,62 +1,63 @@
-
-
-using System.Net;
-using System.Security.Cryptography.X509Certificates;
-
 namespace Universitet_System
 {
     public class Kurs
     {
         public string Kurskode { get; set; }
         public string Kursnavn { get; set; }
-        
-        
-        public int Studiepoeng { get; set; } 
-        public int AntallStudenter { get; set; }
+        public int Studiepoeng { get; set; }
         public int MaxAntallStudenter { get; set; }
 
+        public List<Student> Deltakere { get; set; } = new List<Student>();
 
-        public Kurs(string kurskode, string kursnavn, int studiepoeng, int antallstudenter, int maxantallstudenter)
+        public Kurs(string kurskode, string kursnavn, int studiepoeng, int maxAntallStudenter)
         {
             Kurskode = kurskode;
             Kursnavn = kursnavn;
             Studiepoeng = studiepoeng;
-            AntallStudenter = antallstudenter;
-            MaxAntallStudenter = maxantallstudenter;
+            MaxAntallStudenter = maxAntallStudenter;
+        }
+
+        public bool MeldPå(Student student)
+        {
+            if (Deltakere.Count >= MaxAntallStudenter)
+            {
+                Console.WriteLine("Kurset er fullt.");
+                return false;
+            }
+
+            if (Deltakere.Contains(student))
+            {
+                Console.WriteLine("Studenten er allerede påmeldt.");
+                return false;
+            }
+
+            Deltakere.Add(student);
+            Console.WriteLine($"Student {student.Brukernavn} er meldt på {Kursnavn}.");
+            return true;
+        }
+
+        public bool MeldAv(Student student)
+        {
+            if (!Deltakere.Contains(student))
+            {
+                Console.WriteLine("Studenten er ikke påmeldt.");
+                return false;
+            }
+
+            Deltakere.Remove(student);
+            Console.WriteLine($"Student {student.Brukernavn} er meldt av {Kursnavn}.");
+            return true;
         }
 
         public void PrintDetaljer()
         {
-            Console.WriteLine("Detaljer om kurset:");
-            Console.WriteLine($"Kurskode: {Kurskode}");
-            Console.WriteLine($"Kursnavn: {Kursnavn}");
-            Console.WriteLine($"Studiepoeng: {Studiepoeng}");
-            Console.WriteLine($"Antall studenter: {AntallStudenter}");
-            Console.WriteLine($"Maks antall studenter: {MaxAntallStudenter}");
+            Console.WriteLine($"{Kurskode} - {Kursnavn} ({Studiepoeng} stp)");
+            Console.WriteLine($"Antall studenter: {Deltakere.Count}/{MaxAntallStudenter}");
         }
 
-        // Meldte på studenter
-        public void MeldPå(Student student)
-        {
-            Console.WriteLine($"Dette er Antall studenter påmeldt {AntallStudenter}, det er max antall plasser {MaxAntallStudenter}");
-            Console.Write("Hvor mange skal meldes på: ");
-            int antall = int.Parse(Console.ReadLine() ?? string.Empty);
-
-            if (AntallStudenter + antall <= MaxAntallStudenter)
-            {
-                AntallStudenter += antall;
-                Console.WriteLine($"Meldt på {antall} studenter.");
-            }
-            else
-            {
-                Console.WriteLine($"Kan ikke melde på {antall} studenter. Maks antall studenter er {MaxAntallStudenter}.");
-            }
-        }
         public override string ToString()
         {
-            return $"Kurs: {Kurskode} - {Kursnavn}, Studiepoeng: {Studiepoeng}, Antall påmeldte: {AntallStudenter}";
+            return $"{Kurskode} - {Kursnavn} ({Studiepoeng} stp)";
         }
-
     }
-
 }
