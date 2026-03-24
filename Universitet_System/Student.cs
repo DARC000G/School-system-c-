@@ -24,3 +24,5 @@ namespace Universitet_System
         }
     }
 }
+
+// Init () Hvis jeg skal sette det som en engangs mulighet
