@@ -1,19 +1,3 @@
-Et komplett universitetsadministrasjonssystem utviklet i C#.
-Prosjektet er strukturert i tydelige mapper og følger god objektorientert praksis med et eget service‑lag og testprosjekt.
-
-Systemet støtter:
-
-Innlogging og registrering
-
-Roller: Student, Utvekslingsstudent, Faglærer, Bibliotekansatt
-
-Kursadministrasjon (påmelding, avmelding, pensum, karakterer)
-
-Bibliotekfunksjoner (søk, lån, levering)
-
-Menyer basert på brukerrolle
-
-
 School-system-c-
 │
 ├── Universitet_System/              ← hovedprosjekt
@@ -49,7 +33,24 @@ School-system-c-
 │
 └── README.md
 
+_________________________________________________________________
 
+Et komplett universitetsadministrasjonssystem utviklet i C#.
+Prosjektet er strukturert i tydelige mapper og følger god objektorientert praksis med et eget service‑lag og testprosjekt.
+
+Systemet støtter:
+
+Innlogging og registrering
+
+Roller: Student, Utvekslingsstudent, Faglærer, Bibliotekansatt
+
+Kursadministrasjon (påmelding, avmelding, pensum, karakterer)
+
+Bibliotekfunksjoner (søk, lån, levering)
+
+Menyer basert på brukerrolle
+
+_________________________________________________________________
 
 Forklaring av mappene:
 
