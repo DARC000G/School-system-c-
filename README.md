@@ -1,6 +1,22 @@
+Et komplett universitetsadministrasjonssystem utviklet i C#.
+Prosjektet er strukturert i tydelige mapper og følger god objektorientert praksis med et eget service‑lag og testprosjekt.
+
+Systemet støtter:
+
+Innlogging og registrering
+
+Roller: Student, Utvekslingsstudent, Faglærer, Bibliotekansatt
+
+Kursadministrasjon (påmelding, avmelding, pensum, karakterer)
+
+Bibliotekfunksjoner (søk, lån, levering)
+
+Menyer basert på brukerrolle
+
+
 School-system-c-
 │
-├── Universitet_System/              ← hovedprosjektet
+├── Universitet_System/              ← hovedprosjekt
 │   ├── A - Koden/
 │   │   ├── A - Program/
 │   │   │   └── Program.cs
@@ -32,6 +48,7 @@ School-system-c-
 │   └── Universitet_System.Tests.csproj
 │
 └── README.md
+
 
 
 Forklaring av mappene:
@@ -141,20 +158,19 @@ Maks antall studenter
 
 _________________________________________________________________
 
+🧪 Dummy‑data
+Seed()‑metoden i Program.cs oppretter:
 
-🛠️ Teknologi
-C# / .NET 10
+1 student
 
-Konsollapplikasjon
+1 faglærer
 
-Objektorientert programmering
+1 bibliotekansatt
 
-Service‑lag
+2 kurs
 
-Ryddig og modulær mappestruktur
-
-_________________________________________________________________
-
+2 bøker
+-------------------
 
 🧪 Enhetstester
 Prosjektet inkluderer et eget testprosjekt (Universitet_System.Tests) med totalt 4 enhetstester.
@@ -169,16 +185,3 @@ Hindre duplikatkurs
 Lån av bøker (hindre dobbeltlån)
 
 Registrering av bøker
-
-_________________________________________________________________
-
-Hvordan kjøre prosjektet:
-Åpne prosjektet i Visual Studio eller VS Code
-
-Naviger til Universitet_System
-
-Kjør Program.cs
-
-Logg inn med en av dummy‑brukerne eller registrer en ny
-
-Systemet guider deg videre basert på rolle
