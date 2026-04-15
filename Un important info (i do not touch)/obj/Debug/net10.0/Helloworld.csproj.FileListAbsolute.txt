@@ -1,0 +1,30 @@
+/Users/darcooog/Documents/Oblig oppgave #c/Universitet_System/bin/Debug/net10.0/Helloworld
+/Users/darcooog/Documents/Oblig oppgave #c/Universitet_System/bin/Debug/net10.0/Helloworld.deps.json
+/Users/darcooog/Documents/Oblig oppgave #c/Universitet_System/bin/Debug/net10.0/Helloworld.runtimeconfig.json
+/Users/darcooog/Documents/Oblig oppgave #c/Universitet_System/bin/Debug/net10.0/Helloworld.dll
+/Users/darcooog/Documents/Oblig oppgave #c/Universitet_System/bin/Debug/net10.0/Helloworld.pdb
+/Users/darcooog/Documents/Oblig oppgave #c/Universitet_System/obj/Debug/net10.0/Helloworld.GeneratedMSBuildEditorConfig.editorconfig
+/Users/darcooog/Documents/Oblig oppgave #c/Universitet_System/obj/Debug/net10.0/Helloworld.AssemblyInfoInputs.cache
+/Users/darcooog/Documents/Oblig oppgave #c/Universitet_System/obj/Debug/net10.0/Helloworld.AssemblyInfo.cs
+/Users/darcooog/Documents/Oblig oppgave #c/Universitet_System/obj/Debug/net10.0/Helloworld.csproj.CoreCompileInputs.cache
+/Users/darcooog/Documents/Oblig oppgave #c/Universitet_System/obj/Debug/net10.0/Helloworld.sourcelink.json
+/Users/darcooog/Documents/Oblig oppgave #c/Universitet_System/obj/Debug/net10.0/Helloworld.dll
+/Users/darcooog/Documents/Oblig oppgave #c/Universitet_System/obj/Debug/net10.0/refint/Helloworld.dll
+/Users/darcooog/Documents/Oblig oppgave #c/Universitet_System/obj/Debug/net10.0/Helloworld.pdb
+/Users/darcooog/Documents/Oblig oppgave #c/Universitet_System/obj/Debug/net10.0/Helloworld.genruntimeconfig.cache
+/Users/darcooog/Documents/Oblig oppgave #c/Universitet_System/obj/Debug/net10.0/ref/Helloworld.dll
+/Users/darcooog/Documents/School-system-c-/Universitet_System/bin/Debug/net10.0/Helloworld
+/Users/darcooog/Documents/School-system-c-/Universitet_System/bin/Debug/net10.0/Helloworld.deps.json
+/Users/darcooog/Documents/School-system-c-/Universitet_System/bin/Debug/net10.0/Helloworld.runtimeconfig.json
+/Users/darcooog/Documents/School-system-c-/Universitet_System/bin/Debug/net10.0/Helloworld.dll
+/Users/darcooog/Documents/School-system-c-/Universitet_System/bin/Debug/net10.0/Helloworld.pdb
+/Users/darcooog/Documents/School-system-c-/Universitet_System/obj/Debug/net10.0/Helloworld.GeneratedMSBuildEditorConfig.editorconfig
+/Users/darcooog/Documents/School-system-c-/Universitet_System/obj/Debug/net10.0/Helloworld.AssemblyInfoInputs.cache
+/Users/darcooog/Documents/School-system-c-/Universitet_System/obj/Debug/net10.0/Helloworld.AssemblyInfo.cs
+/Users/darcooog/Documents/School-system-c-/Universitet_System/obj/Debug/net10.0/Helloworld.csproj.CoreCompileInputs.cache
+/Users/darcooog/Documents/School-system-c-/Universitet_System/obj/Debug/net10.0/Helloworld.sourcelink.json
+/Users/darcooog/Documents/School-system-c-/Universitet_System/obj/Debug/net10.0/Helloworld.dll
+/Users/darcooog/Documents/School-system-c-/Universitet_System/obj/Debug/net10.0/refint/Helloworld.dll
+/Users/darcooog/Documents/School-system-c-/Universitet_System/obj/Debug/net10.0/Helloworld.pdb
+/Users/darcooog/Documents/School-system-c-/Universitet_System/obj/Debug/net10.0/Helloworld.genruntimeconfig.cache
+/Users/darcooog/Documents/School-system-c-/Universitet_System/obj/Debug/net10.0/ref/Helloworld.dll
