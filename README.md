@@ -1,37 +1,37 @@
 School-system-c-
-│
-├── Universitet_System/              ← hovedprosjekt
-│   ├── A - Koden/
-│   │   ├── A - Program/
-│   │   │   └── Program.cs
-│   │   └── A - Program Service/
-│   │       ├── UserService.cs
-│   │       ├── CourseService.cs
-│   │       ├── LibraryService.cs
-│   │       └── MenuService.cs
-│   │
-│   ├── B - Personer/
-│   │   ├── Bruker.cs
-│   │   ├── Student.cs
-│   │   ├── UtvekslingStudenter.cs
-│   │   ├── Ansatt.cs
-│   │   ├── Faglærer.cs
-│   │   └── BibliotekAnsatt.cs
-│   │
-│   ├── C - Funksjonalitet/
-│   │   ├── Bok.cs
-│   │   ├── Bibliotek.cs
-│   │   ├── Kurs.cs
-│   │   ├── Lån.cs
-│   │   └── Rolle.cs
-│   │
-│   └── Helloworld.csproj
-│
-├── Universitet_System.Tests/        ← enhetstester
-│   ├── BasicTest.cs
-│   └── Universitet_System.Tests.csproj
-│
-└── README.md
+  Universitet_System/
+    A - Koden/
+      A - Program/
+        Program.cs
+      A - Program Service/
+        UserService.cs
+        CourseService.cs
+        LibraryService.cs
+        MenuService.cs
+
+    B - Personer/
+      Bruker.cs
+      Student.cs
+      UtvekslingStudenter.cs
+      Ansatt.cs
+      Faglærer.cs
+      BibliotekAnsatt.cs
+
+    C - Funksjonalitet/
+      Bok.cs
+      Bibliotek.cs
+      Kurs.cs
+      Lån.cs
+      Rolle.cs
+
+    Helloworld.csproj
+
+  Universitet_System.Tests/
+    BasicTest.cs
+    Universitet_System.Tests.csproj
+
+  README.md
+
 
 _________________________________________________________________
 
