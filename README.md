@@ -1,115 +1,184 @@
-# 🎓 Universitet System – Konsollapplikasjon (C#)
+School-system-c-
+│
+├── Universitet_System/              ← hovedprosjektet
+│   ├── A - Koden/
+│   │   ├── A - Program/
+│   │   │   └── Program.cs
+│   │   └── A - Program Service/
+│   │       ├── UserService.cs
+│   │       ├── CourseService.cs
+│   │       ├── LibraryService.cs
+│   │       └── MenuService.cs
+│   │
+│   ├── B - Personer/
+│   │   ├── Bruker.cs
+│   │   ├── Student.cs
+│   │   ├── UtvekslingStudenter.cs
+│   │   ├── Ansatt.cs
+│   │   ├── Faglærer.cs
+│   │   └── BibliotekAnsatt.cs
+│   │
+│   ├── C - Funksjonalitet/
+│   │   ├── Bok.cs
+│   │   ├── Bibliotek.cs
+│   │   ├── Kurs.cs
+│   │   ├── Lån.cs
+│   │   └── Rolle.cs
+│   │
+│   └── Helloworld.csproj
+│
+├── Universitet_System.Tests/        ← enhetstester
+│   ├── BasicTest.cs
+│   └── Universitet_System.Tests.csproj
+│
+└── README.md
 
-Et komplett og ryddig universitetsadministrasjonssystem utviklet i C#.  
-Prosjektet er strukturert i flere mapper for å gjøre koden oversiktlig, lett å vedlikeholde og enkel å utvide.
 
-Systemet støtter:
-- Innlogging og registrering av brukere
-- Roller: Student, Utvekslingsstudent, Faglærer, Bibliotekansatt
-- Kursadministrasjon (påmelding, avmelding, pensum, karakterer)
-- Bibliotekfunksjoner (søk, lån, levering)
-- Menyer basert på brukerrolle
+Forklaring av mappene:
 
----
+A – Program
+Inneholder Program.cs, som:
 
-## 📁 Prosjektstruktur
+Starter applikasjonen
 
-Prosjektet er organisert i tre hovedmapper + Program:
+Initialiserer dummy‑data
+
+Sender brukeren videre til riktig meny basert på rolle
+
+_________________________________________________________________
+
+A – Program Service
+Service‑laget som håndterer all logikk:
+
+UserService – innlogging, registrering, brukerhåndtering
+
+CourseService – kursadministrasjon
+
+LibraryService – bibliotekfunksjoner
+
+MenuService – alle menyene
+
+_________________________________________________________________
+
+B – Personer
+Alle brukerklassene:
+
+Bruker (abstrakt baseklasse)
+
+Student
+
+Utvekslingsstudent
+
+Ansatt
+
+Faglærer
+
+BibliotekAnsatt
+
+Rolle‑enum
+
+_________________________________________________________________
+
+C – Funksjonalitet
+Alle objekter i systemet:
+
+Bok – representerer en bok
+
+Bibliotek – håndterer bøker og lån
+
+Kurs – kursinformasjon og påmeldinger
+
+Lån – representerer et boklån
+
+_________________________________________________________________
+
+Funksjonalitet
+👤 Brukerroller
+Student
+Se kurs
+
+Melde på/av kurs
+
+Låne og returnere bøker
+
+Se egne lån
+
+Faglærer
+Se kurs
+
+Legge til pensum
+
+Sette karakterer
+
+Bibliotekansatt
+Administrere bøker
+
+Administrere lån
+
+_________________________________________________________________
 
 
----
+📚 Bibliotek
+Søk etter bøker
 
-## 🧩 Kort forklaring av mappene
+Låne og levere
 
-### **A – Program**
-Inneholder hovedprogrammet (`Program.cs`) som starter applikasjonen, initialiserer data og ruter brukeren til riktig meny basert på rolle.
+Se alle bøker
 
-### **A – Program service**
-Inneholder all logikk som tidligere lå i Program.cs:
-- **UserService** – innlogging og registrering  
-- **CourseService** – kursadministrasjon  
-- **LibraryService** – bibliotekfunksjoner  
-- **MenuService** – alle menyene (student, lærer, bibliotek)
+Hindre dobbeltlån
 
-Dette gjør Program.cs kort og profesjonelt.
+_________________________________________________________________
 
-### **B – Personer**
-Alle klasser som representerer brukere:
-- Bruker (abstrakt)
-- Student og UtvekslingStudent
-- Ansatt, Faglærer og BibliotekAnsatt
-- Rolle‑enum
 
-### **C – Funksjonalitet**
-Alt som ikke er personer:
-- Bok
-- Bibliotek
-- Kurs
-- Lån
+🎓 Kurs
+Påmelding / avmelding
 
----
+Pensum
 
-## 🚀 Funksjonalitet
+Karakterer
 
-### 👤 **Brukerroller**
-- **Student**  
-  - Se kurs  
-  - Melde på/av kurs  
-  - Låne/returnere bøker  
-  - Se egne lån  
+Maks antall studenter
 
-- **Faglærer**  
-  - Se kurs  
-  - Legge til pensum  
-  - Sette karakterer  
+_________________________________________________________________
 
-- **Bibliotekansatt**  
-  - Administrere lån og bøker  
 
-### 📚 **Bibliotek**
-- Søk etter bøker  
-- Låne og levere  
-- Se alle bøker  
+🛠️ Teknologi
+C# / .NET 10
 
-### 🎓 **Kurs**
-- Påmelding / avmelding  
-- Pensum  
-- Karakterer  
+Konsollapplikasjon
 
----
+Objektorientert programmering
 
-## 🛠️ Teknologi
+Service‑lag
 
-- **C#**
-- **.NET Console Application**
-- Objektorientert programmering
-- Ryddig mappestruktur og service‑lag
+Ryddig og modulær mappestruktur
 
----
+_________________________________________________________________
 
-## 🧪 Dummy‑data
 
-Prosjektet inkluderer enkel testdata i `Seed()`‑metoden i Program.cs:
-- 1 student  
-- 1 faglærer  
-- 1 bibliotekansatt  
-- 2 kurs  
-- 2 bøker  
+🧪 Enhetstester
+Prosjektet inkluderer et eget testprosjekt (Universitet_System.Tests) med totalt 4 enhetstester.
+Alle testene kjører grønt.
 
-Dette gjør det enkelt å teste systemet uten å registrere alt manuelt.
+Testene dekker:
 
----
+Påmelding til kurs
 
-## 📌 Hvordan kjøre prosjektet
+Hindre duplikatkurs
 
-1. Åpne prosjektet i Visual Studio eller VS Code  
-2. Kjør `Program.cs`  
-3. Logg inn med en av dummy‑brukerne eller registrer en ny  
-4. Systemet guider deg videre basert på rolle  
+Lån av bøker (hindre dobbeltlån)
 
----
+Registrering av bøker
 
-## 🏁 Status
+_________________________________________________________________
 
-Prosjektet er **komplett**, ryddig strukturert og klart for innlevering eller videre utvikling.
+Hvordan kjøre prosjektet:
+Åpne prosjektet i Visual Studio eller VS Code
 
+Naviger til Universitet_System
+
+Kjør Program.cs
+
+Logg inn med en av dummy‑brukerne eller registrer en ny
+
+Systemet guider deg videre basert på rolle
