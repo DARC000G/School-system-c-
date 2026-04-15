@@ -109,28 +109,22 @@ Lån – representerer et boklån
 
 _________________________________________________________________
 
-Funksjonalitet
-👤 Brukerroller
-Student
-Se kurs
+🚀 Funksjonalitet
+            
+    Student
+    Se kurs
+    Melde på/av kurs
+    Låne og returnere bøker
+    Se egne lån
 
-Melde på/av kurs
+    Faglærer
+    Se kurs
+    Legge til pensum
+    Sette karakterer
 
-Låne og returnere bøker
-
-Se egne lån
-
-Faglærer
-Se kurs
-
-Legge til pensum
-
-Sette karakterer
-
-Bibliotekansatt
-Administrere bøker
-
-Administrere lån
+    Bibliotekansatt
+    Administrere bøker
+    Administrere lån
 
 _________________________________________________________________
 
